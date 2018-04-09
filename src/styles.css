@@ -1,1 +1,94 @@
-/* You can add global styles to this file, and also import other style files */
+
+body{
+  margin: 0;
+}
+
+.wrapper {
+  position: fixed;
+  left: 10px;
+  top: 8px;
+}
+
+.colorMenu {
+  border: 1px solid black;
+  width: 20px;
+  border: 1px solid black;
+  padding: 5px;
+  padding-right: 3px;
+  background: white;
+  position: relative;
+}
+
+.colorMenu div {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.colorMenu div:last-child {
+  margin-bottom: 0px;
+}
+
+#grid {
+  margin-left: 35px;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+.lightgrey {
+  background-color: #E4E4E4;
+}
+ .grey {
+   background-color: #888888;
+ }
+
+ .black {
+   background-color: #222222;
+ }
+
+ .pink {
+   background-color: #FDA8D1;
+ }
+
+ .red {
+   background-color: #E30A17;
+ }
+
+ .gold {
+   background-color: #E39424
+ }
+
+ .brown {
+   background-color: #9F6945
+ }
+
+ .yellow {
+   background-color: #E5D82F
+ }
+
+ .lightgreen {
+   background-color: #96DE4F
+ }
+
+ .green {
+   background-color: #1DBC21
+ }
+ .lightblue {
+   background-color: #23D3DC
+ }
+ .blue {
+   background-color: #1484C5
+ }
+ .darkblue {
+   background-color: #0920E6
+ }
+ .lavender {
+   background-color: #CE72E2
+ }
+ .purple {
+   background-color: #800E7E
+ }
