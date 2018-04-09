@@ -1,21 +1,21 @@
 <div class="wrapper">
   <div class="colorMenu">
-    <div class="white"></div>
-    <div class="lightgrey"></div>
-    <div class="grey"></div>
-    <div class="black"></div>
-    <div class="pink"></div>
-    <div class="red"></div>
-    <div class="gold"></div>
-    <div class="brown"></div>
-    <div class="yellow"></div>
-    <div class="lightgreen"></div>
-    <div class="green"></div>
-    <div class="lightblue"></div>
-    <div class="blue"></div>
-    <div class="darkblue"></div>
-    <div class="lavender"></div>
-    <div class="purple"></div>
+    <div (click)="setColor('white')" class="white"></div>
+    <div (click)="setColor('#E4E4E4')" class="lightgrey"></div>
+    <div (click)="setColor('#888888')" class="grey"></div>
+    <div (click)="setColor('#222222')" class="black"></div>
+    <div (click)="setColor('#FDA8D1')" class="pink"></div>
+    <div (click)="setColor('#E30A17')" class="red"></div>
+    <div (click)="setColor('#E39424')" class="gold"></div>
+    <div (click)="setColor('#9F6945')" class="brown"></div>
+    <div (click)="setColor('#E5D82F')" class="yellow"></div>
+    <div (click)="setColor('#96DE4F')" class="lightgreen"></div>
+    <div (click)="setColor('#1DBC21')" class="green"></div>
+    <div (click)="setColor('#23D3DC')" class="lightblue"></div>
+    <div (click)="setColor('#1484C5')" class="blue"></div>
+    <div (click)="setColor('#0920E6')" class="darkblue"></div>
+    <div (click)="setColor('#CE72E2')" class="lavender"></div>
+    <div (click)="setColor('#800E7E')" class="purple"></div>
   </div>
 </div>
-<canvas id="grid" width="1605" height="1605" style="border:2px solid black" (click)="storeGuess($event)"></canvas>
+<canvas id="grid" width="1605" height="1605" style="border:2px solid black" (click)="addSquare($event)"></canvas>
