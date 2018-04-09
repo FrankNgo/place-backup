@@ -19,7 +19,7 @@ export class AppComponent {
     var canvas = <HTMLCanvasElement> document.getElementById("grid");
     var ctx = canvas.getContext("2d");
     ctx.fillStyle = this.color;
-    ctx.fillRect(((Math.ceil(($event.screenX-593)/15)*15)-15),(((Math.ceil(($event.screenY-115)/15)*15)-15)),15,15);
+    ctx.fillRect(((Math.ceil(($event.offsetX)/15)*15)-15),(((Math.ceil(($event.offsetY)/15)*15)-15)),15,15);
   }
 
   setColor(colorset) {
