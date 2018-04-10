@@ -10,20 +10,19 @@ body{
 }
 
 .colorMenu {
-  border: 1px solid black;
-  width: 20px;
-  border: 1px solid black;
+
+  width: 15px;
+
   padding: 5px;
   padding-right: 3px;
-  background: white;
+
   position: relative;
 }
 
 .colorMenu div {
-  width: 15px;
-  height: 15px;
-  margin-bottom: 10px;
-  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  margin-left: -12px;
   cursor: pointer;
 }
 

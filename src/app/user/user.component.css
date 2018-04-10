@@ -1,3 +1,44 @@
-.image{
-  width: 100%
+
+
+#grid{
+  margin: 161px;
+}
+#sideBar{
+  background-color: ;
+}
+
+.col-md-1{
+  background-color: #34495E;
+  margin: 0;
+  margin-right: -15px;
+  height: 1174px;
+
+}
+
+/*.secondRow{
+  margin-left: 58px;
+  position: static;
+}
+
+.thirdRow{
+  margin-left: 115px;
+  position: static;
+}*/
+
+.container {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+.palette{
+  font-size: 30px;
+}
+
+canvas#grid {
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  color: white;
 }
