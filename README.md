@@ -6,6 +6,45 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+2. ### Install and Host Locally
+
+  clone the github respository
+  ```
+  $ git clone https://github.com/FrankNgo/OfferUp-Clone
+  ```
+  #### Add Firebase Credentials
+  Create an account and get credentials from Firebase. https://firebase.google.com/   
+  Create a new project.  
+  Give it the name of your choice.  
+  Select your Country/Region.  
+  Choose the add Firebase to your web app option.  
+  Add a file named api-keys.ts in the src/app directory.  
+
+  Add the following code to the file with your credentials in place of xxxx.
+  ```
+  export var masterFirebaseConfig = {
+      apiKey: "xxxx",
+      authDomain: "xxxx.firebaseapp.com",
+      databaseURL: "https://xxxx.firebaseio.com",
+      storageBucket: "xxxx.appspot.com",
+      messagingSenderId: "xxxx"
+    };
+  ```
+  move into the directory
+  ```
+  $ cd project
+  ```
+  install npm
+  ```
+  $ npm install
+  ```
+  run the program
+  ```
+  $ ng serve --open
+  ```
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
