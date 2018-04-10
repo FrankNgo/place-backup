@@ -9,6 +9,7 @@ import { FirebaseUserModel } from '../core/user.model';
 @Component({
   selector: 'page-user',
   templateUrl: 'user.component.html',
+  styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit{
 

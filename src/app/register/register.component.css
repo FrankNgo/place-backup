@@ -1,17 +1,59 @@
-.header{
+body{
   text-align: center;
-  font-size: 30px;
-  margin-bottom: 40px;
+  margin: 0;
+  background-color: red;
 }
 
-.row{
-  margin-top: 10px;
+.header{
+  text-align: center;
+  margin-top:120px;
+  border: 1px solid #EAECEE;
+  border-radius: 25px;
 }
+
 
 .error{
   color: red;
 }
 
-.success{
-  color: green;
+form{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: -47px;
+}
+
+.formGroup{
+  text-align: center;
+}
+
+
+.center-div
+{
+  margin: 0 auto;
+  width: 500px;
+  height: 100px;
+  background-color: #17a2b8;
+  border-radius: 25px 25px 0px 0px;
+  text-align: center;
+}
+
+button{
+  margin: 2px;
+  /*width: 490px;*/
+}
+
+.submitButton{
+  /*width: 4px;*/
+  margin: 0;
+  width: 468px;
+}
+
+h1{
+  padding: 30px;
+  color: white;
+}
+
+p{
+  margin-top: 10px;
+  text-align: center;
 }
