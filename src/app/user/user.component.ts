@@ -95,18 +95,16 @@ export class UserComponent implements OnInit{
     var newBox: Boxes = new Boxes(this.color, (Math.ceil(($event.offsetX)/15)*15)-15, (Math.ceil(($event.offsetY)/15)*15)-15);
     this.boxService.addSquare(newBox)
     // setTimeout(function(){$event.off}, 5000);
-
-    
-
     }
 
-  drawPixel (xInput, yInput, color) {
+  drawPixels (xInput, yInput, color) {
     var canvas = <HTMLCanvasElement> document.getElementById("grid");
     var ctx = canvas.getContext("2d");
     ctx.fillStyle = color;
     var x = (Math.ceil((xInput)/15)*15)-15;
     var y = (Math.ceil((yInput)/15)*15)-15;
-    ctx.fillRect(xInput,yInput,15,15);
+    ctx.fillRect(xInput,yInput,15,  15);
+    
   }
 
   setColor(colorset) {
