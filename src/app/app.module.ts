@@ -15,6 +15,7 @@ import { UserService } from './core/user.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { masterFirebaseConfig } from './api-keys';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // for AngularFireDatabase
 import { AngularFireDatabaseModule } from 'angularfire2/database';
