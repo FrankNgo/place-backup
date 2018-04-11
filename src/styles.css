@@ -1,12 +1,12 @@
 
-body{
+html, body{
   margin: 0;
 }
 
 .wrapper {
-  position: absolute;
-  left: 10px;
-  top: 8px;
+  position: relative;
+  left: 25px;
+  top: 0px
 }
 
 .colorMenu {

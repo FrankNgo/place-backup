@@ -1,8 +1,6 @@
 <div class="row">
-  <div class="col-md-1">
+  <div class="sidebar">
     <div class="wrapper">
-      <h1 class="palette">Color Palette</h1><br>
-      <button type="button" (click)="logout()" class="btn btn-link">Logout</button>
       <div class="colorMenu">
         <div class="row">
           <div class="col-md-4 firstRow">
@@ -116,14 +114,13 @@
             <div (click)="setColor('#000000')" style="background-color:#000000" class="black"></div><br>
           </div>
         </div>
-        <button type="button" (click)="logout()" class="btn btn-link">Logout</button>
       </div>
     </div>
   </div>
-  <div class="col-md-11">
-    <canvas id="grid" width="2470" height="1170" style="border:2px solid black" (click)="addSquare($event)"></canvas>
-  </div>
-  <div class="card" *ngFor="let box of boxes | async">
+  <button type="button" (click)="logout()" class="btn btn-link">Logout</button>
+  <canvas id="grid" width="2405" height="1361" style="border:2px solid black" (click)="addSquare($event)"></canvas>
+
+  <div *ngFor="let box of boxes | async">
     {{drawPixel(box.xCoord, box.yCoord, box.color)}}
   </div>
 </div>

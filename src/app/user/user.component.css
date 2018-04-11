@@ -39,10 +39,8 @@
   position: absolute;
 }
 
-
-
 .container {
-  margin: 0 0 0 20px;
+  margin:   0 0 20px;
   padding: 0;
 }
 
@@ -53,8 +51,25 @@
 canvas#grid {
   margin: 0;
   padding: 0;
+  position: absolute;
+  left: 150px;
+  overflow: scroll  
 }
 
 h1{
   color: white;
+}
+
+.btn {
+  position: fixed;
+  left: 0;
+  top: 600px;
+  width: 150px;
+  background: white;
+  z-index: 99;
+}
+
+.sidebar {
+  position: fixed;
+  z-index: 99;
 }
