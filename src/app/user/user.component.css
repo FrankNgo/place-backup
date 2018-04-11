@@ -1,15 +1,4 @@
-.colorMenu {
-  position: relative;
-  z-index: 99;
-}
 
-.colorRow div {
-  display: inline;
-}
-
-.colorRow {
-  display: block
-}
 
 #grid{
   margin: 161px;
