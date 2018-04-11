@@ -1,129 +1,126 @@
 <div class="row">
-  <div class="col-md-1">
-    <div class="wrapper">
-      <h1 class="palette">Color Palette</h1><br>
-      <button type="button" (click)="logout()" class="btn btn-link">Logout</button>
-      <div class="colorMenu">
-        <div class="row">
-          <div class="col-md-4 firstRow">
-            <div (click)="setColor('#FFCDD2')" style="background-color:#FFCDD2" class="red"></div>
-            <div (click)="setColor('#F8BBD0')" style="background-color:#F8BBD0" class="pink"></div>
-            <div (click)="setColor('#E1BEE7')" style="background-color:#E1BEE7" class="purple"></div>
-            <div (click)="setColor('#D1C4E9')" style="background-color:#D1C4E9" class="deepPurple"></div>
-            <div (click)="setColor('#C5CAE9')" style="background-color:#C5CAE9" class="indigo"></div>
-            <div (click)="setColor('#BBDEFB')" style="background-color:#BBDEFB" class="blue"></div>
-            <div (click)="setColor('#B3E5FC')" style="background-color:#B3E5FC" class="lightBlue"></div>
-            <div (click)="setColor('#B2EBF2')" style="background-color:#B2EBF2" class="cyan"></div>
-            <div (click)="setColor('#B2DFDB')" style="background-color:#B2DFDB" class="teal"></div>
-            <div (click)="setColor('#C8E6C9')" style="background-color:#C8E6C9" class="green"></div>
-            <div (click)="setColor('#DCEDC8')" style="background-color:#DCEDC8" class="lightGreen"></div>
-            <div (click)="setColor('#F0F4C3')" style="background-color:#F0F4C3" class="lime"></div>
-            <div (click)="setColor('#FFF9C4')" style="background-color:#FFF9C4" class="yellow"></div>
-            <div (click)="setColor('#FFECB3')" style="background-color:#FFECB3" class="amber"></div>
-            <div (click)="setColor('#FFE0B2')" style="background-color:#FFE0B2" class="orange"></div>
-            <div (click)="setColor('#FFCCBC')" style="background-color:#FFCCBC" class="deepOrange"></div>
-            <div (click)="setColor('#D7CCC8')" style="background-color:#D7CCC8" class="brown"></div>
-            <div (click)="setColor('#F5F5F5')" style="background-color:#F5F5F5" class="grey"></div>
-            <div (click)="setColor('#CFD8DC')" style="background-color:#CFD8DC" class="blueGrey"></div>
-            <div (click)="setColor('#FFFFFF')" style="background-color:#FFFFFF" class="white"></div>
-          </div>
-          <div class="col-md-4 secondRow">
-            <div (click)="setColor('#E57373')" style="background-color:#E57373" class="red"></div>
-            <div (click)="setColor('#F06292')" style="background-color:#F06292" class="pink"></div>
-            <div (click)="setColor('#BA68C8')" style="background-color:#BA68C8" class="purple"></div>
-            <div (click)="setColor('#9575CD')" style="background-color:#9575CD" class="deepPurple"></div>
-            <div (click)="setColor('#7986CB')" style="background-color:#7986CB" class="indigo"></div>
-            <div (click)="setColor('#64B5F6')" style="background-color:#64B5F6" class="blue"></div>
-            <div (click)="setColor('#4FC3F7')" style="background-color:#4FC3F7" class="lightBlue"></div>
-            <div (click)="setColor('#4DD0E1')" style="background-color:#4DD0E1" class="cyan"></div>
-            <div (click)="setColor('#4DB6AC')" style="background-color:#4DB6AC" class="teal"></div>
-            <div (click)="setColor('#81C784')" style="background-color:#81C784" class="green"></div>
-            <div (click)="setColor('#AED581')" style="background-color:#AED581" class="lightGreen"></div>
-            <div (click)="setColor('#DCE775')" style="background-color:#DCE775" class="lime"></div>
-            <div (click)="setColor('#FFF176')" style="background-color:#FFF176" class="yellow"></div>
-            <div (click)="setColor('#FFD54F')" style="background-color:#FFD54F" class="amber"></div>
-            <div (click)="setColor('#FFB74D')" style="background-color:#FFB74D" class="orange"></div>
-            <div (click)="setColor('#FF8A65')" style="background-color:#FF8A65" class="deepOrange"></div>
-            <div (click)="setColor('#A1887F')" style="background-color:#A1887F" class="brown"></div>
-            <div (click)="setColor('#E0E0E0')" style="background-color:#E0E0E0" class="grey"></div>
-            <div (click)="setColor('#90A4AE')" style="background-color:#90A4AE" class="blueGrey"></div>
-            <div (click)="setColor('#FAFAFA')" style="background-color:#FAFAFA" class="white"></div>
-          </div>
-          <div class="col-md-4 thirdRow">
-            <div (click)="setColor('#F44336')" style="background-color:#F44336" class="red"></div>
-            <div (click)="setColor('#E91E63')" style="background-color:#E91E63" class="pink"></div>
-            <div (click)="setColor('#9C27B0')" style="background-color:#9C27B0" class="purple"></div>
-            <div (click)="setColor('#673AB7')" style="background-color:#673AB7" class="deepPurple"></div>
-            <div (click)="setColor('#3F51B5')" style="background-color:#3F51B5" class="indigo"></div>
-            <div (click)="setColor('#2196F3')" style="background-color:#2196F3" class="blue"></div>
-            <div (click)="setColor('#03A9F4')" style="background-color:#03A9F4" class="lightBlue"></div>
-            <div (click)="setColor('#00BCD4')" style="background-color:#00BCD4" class="cyan"></div>
-            <div (click)="setColor('#009688')" style="background-color:#009688" class="teal"></div>
-            <div (click)="setColor('#4CAF50')" style="background-color:#4CAF50" class="green"></div>
-            <div (click)="setColor('#8BC34A')" style="background-color:#8BC34A" class="lightGreen"></div>
-            <div (click)="setColor('#CDDC39')" style="background-color:#CDDC39" class="lime"></div>
-            <div (click)="setColor('#FFEB3B')" style="background-color:#FFEB3B" class="yellow"></div>
-            <div (click)="setColor('#FFC107')" style="background-color:#FFC107" class="amber"></div>
-            <div (click)="setColor('#FF9800')" style="background-color:#FF9800" class="orange"></div>
-            <div (click)="setColor('#FF5722')" style="background-color:#FF5722" class="deepOrange"></div>
-            <div (click)="setColor('#795548')" style="background-color:#795548" class="brown"></div>
-            <div (click)="setColor('#9E9E9E')" style="background-color:#9E9E9E" class="grey"></div>
-            <div (click)="setColor('#607D8B')" style="background-color:#607D8B" class="blueGrey"></div>
-            <div (click)="setColor('#9E9E9E')" style="background-color:#9E9E9E" class="white"></div>
-          </div>
-          <div class="col-md-4 fourthRow">
-            <div (click)="setColor('#D32F2F')" style="background-color:#D32F2F" class="red"></div>
-            <div (click)="setColor('#C2185B')" style="background-color:#C2185B" class="pink"></div>
-            <div (click)="setColor('#7B1FA2')" style="background-color:#7B1FA2" class="purple"></div>
-            <div (click)="setColor('#512DA8')" style="background-color:#512DA8" class="deepPurple"></div>
-            <div (click)="setColor('#303F9F')" style="background-color:#303F9F" class="indigo"></div>
-            <div (click)="setColor('#1976D2')" style="background-color:#1976D2" class="blue"></div>
-            <div (click)="setColor('#0288D1')" style="background-color:#0288D1" class="lightBlue"></div>
-            <div (click)="setColor('#0097A7')" style="background-color:#0097A7" class="cyan"></div>
-            <div (click)="setColor('#00796B')" style="background-color:#00796B" class="teal"></div>
-            <div (click)="setColor('#388E3C')" style="background-color:#388E3C" class="green"></div>
-            <div (click)="setColor('#689F38')" style="background-color:#689F38" class="lightGreen"></div>
-            <div (click)="setColor('#AFB42B')" style="background-color:#AFB42B" class="lime"></div>
-            <div (click)="setColor('#FBC02D')" style="background-color:#FBC02D" class="yellow"></div>
-            <div (click)="setColor('#FFA000')" style="background-color:#FFA000" class="amber"></div>
-            <div (click)="setColor('#F57C00')" style="background-color:#F57C00" class="orange"></div>
-            <div (click)="setColor('#E64A19')" style="background-color:#E64A19" class="deepOrange"></div>
-            <div (click)="setColor('#5D4037')" style="background-color:#5D4037" class="brown"></div>
-            <div (click)="setColor('#616161')" style="background-color:#616161" class="grey"></div>
-            <div (click)="setColor('#455A64')" style="background-color:#455A64" class="blueGrey"></div>
-            <div (click)="setColor('#616161')" style="background-color:#616161" class="black"></div>
-          </div>
-          <div class="col-md-4 fifthRow">
-            <div (click)="setColor('#B71C1C')" style="background-color:#B71C1C" class="red"></div>
-            <div (click)="setColor('#880E4F')" style="background-color:#880E4F" class="pink"></div>
-            <div (click)="setColor('#4A148C')" style="background-color:#4A148C" class="purple"></div>
-            <div (click)="setColor('#311B92')" style="background-color:#311B92" class="deepPurple"></div>
-            <div (click)="setColor('#1A237E')" style="background-color:#1A237E" class="indigo"></div>
-            <div (click)="setColor('#0D47A1')" style="background-color:#0D47A1" class="blue"></div>
-            <div (click)="setColor('#01579B')" style="background-color:#01579B" class="lightBlue"></div>
-            <div (click)="setColor('#006064')" style="background-color:#006064" class="cyan"></div>
-            <div (click)="setColor('#004D40')" style="background-color:#004D40" class="teal"></div>
-            <div (click)="setColor('#1B5E20')" style="background-color:#1B5E20" class="green"></div>
-            <div (click)="setColor('#33691E')" style="background-color:#33691E" class="lightGreen"></div>
-            <div (click)="setColor('#827717')" style="background-color:#827717" class="lime"></div>
-            <div (click)="setColor('#F57F17')" style="background-color:#F57F17" class="yellow"></div>
-            <div (click)="setColor('#FF6F00')" style="background-color:#FF6F00" class="amber"></div>
-            <div (click)="setColor('#E65100')" style="background-color:#E65100" class="orange"></div>
-            <div (click)="setColor('#BF360C')" style="background-color:#BF360C" class="deepOrange"></div>
-            <div (click)="setColor('#3E2723')" style="background-color:#3E2723" class="brown"></div>
-            <div (click)="setColor('#212121')" style="background-color:#212121" class="grey"></div>
-            <div (click)="setColor('#263238')" style="background-color:#263238" class="blueGrey"></div>
-            <div (click)="setColor('#000000')" style="background-color:#000000" class="black"></div><br>
-          </div>
+  <div class="wrapper">
+    <h1 class="palette">Color Palette</h1><br>
+    <button type="button" (click)="logout()" class="btn btn-link">Logout</button>
+    <div class="colorMenu">
+      <div class="row">
+        <div class="colorRow">
+          <div (click)="setColor('#FFCDD2')" style="background-color:#FFCDD2" class="red"></div>
+          <div (click)="setColor('#F8BBD0')" style="background-color:#F8BBD0" class="pink"></div>
+          <div (click)="setColor('#E1BEE7')" style="background-color:#E1BEE7" class="purple"></div>
+          <div (click)="setColor('#D1C4E9')" style="background-color:#D1C4E9" class="deepPurple"></div>
+          <div (click)="setColor('#C5CAE9')" style="background-color:#C5CAE9" class="indigo"></div>
+          <div (click)="setColor('#BBDEFB')" style="background-color:#BBDEFB" class="blue"></div>
+          <div (click)="setColor('#B3E5FC')" style="background-color:#B3E5FC" class="lightBlue"></div>
+          <div (click)="setColor('#B2EBF2')" style="background-color:#B2EBF2" class="cyan"></div>
+          <div (click)="setColor('#B2DFDB')" style="background-color:#B2DFDB" class="teal"></div>
+          <div (click)="setColor('#C8E6C9')" style="background-color:#C8E6C9" class="green"></div>
+          <div (click)="setColor('#DCEDC8')" style="background-color:#DCEDC8" class="lightGreen"></div>
+          <div (click)="setColor('#F0F4C3')" style="background-color:#F0F4C3" class="lime"></div>
+          <div (click)="setColor('#FFF9C4')" style="background-color:#FFF9C4" class="yellow"></div>
+          <div (click)="setColor('#FFECB3')" style="background-color:#FFECB3" class="amber"></div>
+          <div (click)="setColor('#FFE0B2')" style="background-color:#FFE0B2" class="orange"></div>
+          <div (click)="setColor('#FFCCBC')" style="background-color:#FFCCBC" class="deepOrange"></div>
+          <div (click)="setColor('#D7CCC8')" style="background-color:#D7CCC8" class="brown"></div>
+          <div (click)="setColor('#F5F5F5')" style="background-color:#F5F5F5" class="grey"></div>
+          <div (click)="setColor('#CFD8DC')" style="background-color:#CFD8DC" class="blueGrey"></div>
+          <div (click)="setColor('#FFFFFF')" style="background-color:#FFFFFF" class="white"></div>
         </div>
-        <button type="button" (click)="logout()" class="btn btn-link">Logout</button>
+        <div class="colorRow">
+          <div (click)="setColor('#E57373')" style="background-color:#E57373" class="red"></div>
+          <div (click)="setColor('#F06292')" style="background-color:#F06292" class="pink"></div>
+          <div (click)="setColor('#BA68C8')" style="background-color:#BA68C8" class="purple"></div>
+          <div (click)="setColor('#9575CD')" style="background-color:#9575CD" class="deepPurple"></div>
+          <div (click)="setColor('#7986CB')" style="background-color:#7986CB" class="indigo"></div>
+          <div (click)="setColor('#64B5F6')" style="background-color:#64B5F6" class="blue"></div>
+          <div (click)="setColor('#4FC3F7')" style="background-color:#4FC3F7" class="lightBlue"></div>
+          <div (click)="setColor('#4DD0E1')" style="background-color:#4DD0E1" class="cyan"></div>
+          <div (click)="setColor('#4DB6AC')" style="background-color:#4DB6AC" class="teal"></div>
+          <div (click)="setColor('#81C784')" style="background-color:#81C784" class="green"></div>
+          <div (click)="setColor('#AED581')" style="background-color:#AED581" class="lightGreen"></div>
+          <div (click)="setColor('#DCE775')" style="background-color:#DCE775" class="lime"></div>
+          <div (click)="setColor('#FFF176')" style="background-color:#FFF176" class="yellow"></div>
+          <div (click)="setColor('#FFD54F')" style="background-color:#FFD54F" class="amber"></div>
+          <div (click)="setColor('#FFB74D')" style="background-color:#FFB74D" class="orange"></div>
+          <div (click)="setColor('#FF8A65')" style="background-color:#FF8A65" class="deepOrange"></div>
+          <div (click)="setColor('#A1887F')" style="background-color:#A1887F" class="brown"></div>
+          <div (click)="setColor('#E0E0E0')" style="background-color:#E0E0E0" class="grey"></div>
+          <div (click)="setColor('#90A4AE')" style="background-color:#90A4AE" class="blueGrey"></div>
+          <div (click)="setColor('#FAFAFA')" style="background-color:#FAFAFA" class="white"></div>
+        </div>
+        <div class="colorRow">
+          <div (click)="setColor('#F44336')" style="background-color:#F44336" class="red"></div>
+          <div (click)="setColor('#E91E63')" style="background-color:#E91E63" class="pink"></div>
+          <div (click)="setColor('#9C27B0')" style="background-color:#9C27B0" class="purple"></div>
+          <div (click)="setColor('#673AB7')" style="background-color:#673AB7" class="deepPurple"></div>
+          <div (click)="setColor('#3F51B5')" style="background-color:#3F51B5" class="indigo"></div>
+          <div (click)="setColor('#2196F3')" style="background-color:#2196F3" class="blue"></div>
+          <div (click)="setColor('#03A9F4')" style="background-color:#03A9F4" class="lightBlue"></div>
+          <div (click)="setColor('#00BCD4')" style="background-color:#00BCD4" class="cyan"></div>
+          <div (click)="setColor('#009688')" style="background-color:#009688" class="teal"></div>
+          <div (click)="setColor('#4CAF50')" style="background-color:#4CAF50" class="green"></div>
+          <div (click)="setColor('#8BC34A')" style="background-color:#8BC34A" class="lightGreen"></div>
+          <div (click)="setColor('#CDDC39')" style="background-color:#CDDC39" class="lime"></div>
+          <div (click)="setColor('#FFEB3B')" style="background-color:#FFEB3B" class="yellow"></div>
+          <div (click)="setColor('#FFC107')" style="background-color:#FFC107" class="amber"></div>
+          <div (click)="setColor('#FF9800')" style="background-color:#FF9800" class="orange"></div>
+          <div (click)="setColor('#FF5722')" style="background-color:#FF5722" class="deepOrange"></div>
+          <div (click)="setColor('#795548')" style="background-color:#795548" class="brown"></div>
+          <div (click)="setColor('#9E9E9E')" style="background-color:#9E9E9E" class="grey"></div>
+          <div (click)="setColor('#607D8B')" style="background-color:#607D8B" class="blueGrey"></div>
+          <div (click)="setColor('#9E9E9E')" style="background-color:#9E9E9E" class="white"></div>
+        </div>
+        <div class="colorRow">
+          <div (click)="setColor('#D32F2F')" style="background-color:#D32F2F" class="red"></div>
+          <div (click)="setColor('#C2185B')" style="background-color:#C2185B" class="pink"></div>
+          <div (click)="setColor('#7B1FA2')" style="background-color:#7B1FA2" class="purple"></div>
+          <div (click)="setColor('#512DA8')" style="background-color:#512DA8" class="deepPurple"></div>
+          <div (click)="setColor('#303F9F')" style="background-color:#303F9F" class="indigo"></div>
+          <div (click)="setColor('#1976D2')" style="background-color:#1976D2" class="blue"></div>
+          <div (click)="setColor('#0288D1')" style="background-color:#0288D1" class="lightBlue"></div>
+          <div (click)="setColor('#0097A7')" style="background-color:#0097A7" class="cyan"></div>
+          <div (click)="setColor('#00796B')" style="background-color:#00796B" class="teal"></div>
+          <div (click)="setColor('#388E3C')" style="background-color:#388E3C" class="green"></div>
+          <div (click)="setColor('#689F38')" style="background-color:#689F38" class="lightGreen"></div>
+          <div (click)="setColor('#AFB42B')" style="background-color:#AFB42B" class="lime"></div>
+          <div (click)="setColor('#FBC02D')" style="background-color:#FBC02D" class="yellow"></div>
+          <div (click)="setColor('#FFA000')" style="background-color:#FFA000" class="amber"></div>
+          <div (click)="setColor('#F57C00')" style="background-color:#F57C00" class="orange"></div>
+          <div (click)="setColor('#E64A19')" style="background-color:#E64A19" class="deepOrange"></div>
+          <div (click)="setColor('#5D4037')" style="background-color:#5D4037" class="brown"></div>
+          <div (click)="setColor('#616161')" style="background-color:#616161" class="grey"></div>
+          <div (click)="setColor('#455A64')" style="background-color:#455A64" class="blueGrey"></div>
+          <div (click)="setColor('#616161')" style="background-color:#616161" class="black"></div>
+        </div>
+        <div class="colorRow">
+          <div (click)="setColor('#B71C1C')" style="background-color:#B71C1C" class="red"></div>
+          <div (click)="setColor('#880E4F')" style="background-color:#880E4F" class="pink"></div>
+          <div (click)="setColor('#4A148C')" style="background-color:#4A148C" class="purple"></div>
+          <div (click)="setColor('#311B92')" style="background-color:#311B92" class="deepPurple"></div>
+          <div (click)="setColor('#1A237E')" style="background-color:#1A237E" class="indigo"></div>
+          <div (click)="setColor('#0D47A1')" style="background-color:#0D47A1" class="blue"></div>
+          <div (click)="setColor('#01579B')" style="background-color:#01579B" class="lightBlue"></div>
+          <div (click)="setColor('#006064')" style="background-color:#006064" class="cyan"></div>
+          <div (click)="setColor('#004D40')" style="background-color:#004D40" class="teal"></div>
+          <div (click)="setColor('#1B5E20')" style="background-color:#1B5E20" class="green"></div>
+          <div (click)="setColor('#33691E')" style="background-color:#33691E" class="lightGreen"></div>
+          <div (click)="setColor('#827717')" style="background-color:#827717" class="lime"></div>
+          <div (click)="setColor('#F57F17')" style="background-color:#F57F17" class="yellow"></div>
+          <div (click)="setColor('#FF6F00')" style="background-color:#FF6F00" class="amber"></div>
+          <div (click)="setColor('#E65100')" style="background-color:#E65100" class="orange"></div>
+          <div (click)="setColor('#BF360C')" style="background-color:#BF360C" class="deepOrange"></div>
+          <div (click)="setColor('#3E2723')" style="background-color:#3E2723" class="brown"></div>
+          <div (click)="setColor('#212121')" style="background-color:#212121" class="grey"></div>
+          <div (click)="setColor('#263238')" style="background-color:#263238" class="blueGrey"></div>
+          <div (click)="setColor('#000000')" style="background-color:#000000" class="black"></div><br>
+        </div>
       </div>
+      <button type="button" (click)="logout()" class="btn btn-link">Logout</button>
     </div>
   </div>
-  <div class="col-md-11">
-    <canvas id="grid" width="2470" height="1170" style="border:2px solid black" (click)="addSquare($event)"></canvas>
-  </div>
-  <div class="card" *ngFor="let box of boxes | async">
-    {{drawPixel(box.xCoord, box.yCoord, box.color)}}
-  </div>
+</div>
+<canvas id="grid" width="2470" height="1170" style="border:2px solid black" (click)="addSquare($event)"></canvas>
+
+<div class="card" *ngFor="let box of boxes | async">
+  {{drawPixel(box.xCoord, box.yCoord, box.color)}}
 </div>

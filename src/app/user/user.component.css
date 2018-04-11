@@ -1,14 +1,24 @@
+.colorMenu {
+  position: relative;
+  z-index: 99;
+}
 
+.colorRow div {
+  display: inline;
+}
+
+.colorRow {
+  display: block
+}
 
 #grid{
   margin: 161px;
 }
 #sideBar{
-  background-color: ;
+  background-color:
 }
 
 .col-md-1{
-  background-color: #34495E;
   margin: 0;
   margin-right: -15px;
   height: 1174px;
