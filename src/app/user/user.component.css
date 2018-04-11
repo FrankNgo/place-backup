@@ -12,18 +12,35 @@
   margin: 0;
   margin-right: -15px;
   height: 1174px;
+  margin-left: 15px;
 
 }
+.firsRow{
+  margin-left: 0px;
+  position: absolute;
+}
 
-/*.secondRow{
-  margin-left: 58px;
-  position: static;
+.secondRow{
+  margin-left: 20px;
+  position: absolute;
 }
 
 .thirdRow{
-  margin-left: 115px;
-  position: static;
-}*/
+  margin-left: 50px;
+  position: absolute;
+}
+
+.fourthRow{
+  margin-left: 80px;
+  position: absolute;
+}
+
+.fifthRow{
+  margin-left: 110px;
+  position: absolute;
+}
+
+
 
 .container {
   margin: 0 0 0 20px;

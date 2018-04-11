@@ -1,18 +1,29 @@
+import { Injectable } from '@angular/core';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../core/user.service';
 import { AuthService } from '../core/auth.service';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { FirebaseUserModel } from '../core/user.model';
+import { BoxService } from '../../board.service';
+import { Boxes } from '../../board/board.model';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'page-user',
   templateUrl: 'user.component.html',
-  styleUrls: ['./user.component.css']
+  styleUrls: ['./user.component.css'],
+  providers: [BoxService]
 })
+@Injectable()
 export class UserComponent implements OnInit{
 
+  boxes: FirebaseListObservable<any[]>;
   user: FirebaseUserModel = new FirebaseUserModel();
   profileForm: FormGroup;
 
@@ -21,12 +32,16 @@ export class UserComponent implements OnInit{
     public authService: AuthService,
     private route: ActivatedRoute,
     private location : Location,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private router: Router
+    ,private boxService: BoxService
   ) {
 
   }
 
   ngOnInit(): void {
+    this.boxes = this.boxService.getBoxes();
+    // console.log(this.boxes);
     this.route.data.subscribe(routeData => {
       let data = routeData['data'];
       if (data) {
@@ -67,9 +82,8 @@ export class UserComponent implements OnInit{
 
   drawnPixels = [];
 
-
-  addSquare($event){
-    // console.log($event);
+  addSquare ($event, newBox: Boxes) {
+    // console.log(newBox);
     var canvas = <HTMLCanvasElement> document.getElementById("grid");
     var ctx = canvas.getContext("2d");
     ctx.fillStyle = this.color;
@@ -77,11 +91,21 @@ export class UserComponent implements OnInit{
     var x = (Math.ceil(($event.offsetX)/15)*15)-15;
     var y = (Math.ceil(($event.offsetY)/15)*15)-15;
     ctx.fillRect(x,y,15,15);
-    this.drawnPixels.push({x,y,colors});
-    console.log(this.drawnPixels);
+    var newBox: Boxes = new Boxes(this.color, (Math.ceil(($event.offsetX)/15)*15)-15, (Math.ceil(($event.offsetY)/15)*15)-15);
+    this.boxService.addSquare(newBox)
+  }
+
+  drawPixel (xInput, yInput, color) {
+    var canvas = <HTMLCanvasElement> document.getElementById("grid");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = color;
+    var x = (Math.ceil((xInput)/15)*15)-15;
+    var y = (Math.ceil((yInput)/15)*15)-15;
+    ctx.fillRect(xInput,yInput,15,15);
   }
 
   setColor(colorset) {
     this.color = colorset;
   }
+
 }

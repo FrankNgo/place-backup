@@ -15,12 +15,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     var canvas = <HTMLCanvasElement> document.getElementById("grid");
-    var ctx = canvas.getContext("2d");
-    ctx.fillStyle = "black";
-    // console.log(this.drawnPixels);
-    // ctx.fillRect(((Math.ceil((100)/15)*15)-15),(((Math.ceil((100)/15)*15)-15)),15,15);
+    console.log(canvas);
   }
-
+//bla
   addSquare($event){
     // console.log($event);
     var canvas = <HTMLCanvasElement> document.getElementById("grid");
@@ -31,7 +28,7 @@ export class AppComponent implements OnInit {
     var y = (Math.ceil(($event.offsetY)/15)*15)-15;
     ctx.fillRect(x,y,15,15);
     this.drawnPixels.push({x,y,colors});
-    console.log(this.drawnPixels);  
+    console.log(this.drawnPixels);
   }
 
   setColor(colorset) {
