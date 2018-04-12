@@ -121,10 +121,8 @@
   <canvas id="grid" width="2405" height="1361" style="border:2px solid black" (click)="addSquare($event)"></canvas>
 
 
-    {{*ngFor="let box of boxes | async" drawPixels(box.xCoord, box.yCoord, box.color)}}
+  <ng-container class="card" *ngFor="let box of boxes | async">
+    {{drawPixels(box.xCoord, box.yCoord, box.color)}}
+</ng-container>
 
 </div>
-
-<script>
-  console.log("hello")
-</script>
